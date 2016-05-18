@@ -18,7 +18,7 @@ public class Ex16 {
 		double c = scan.nextDouble();
 		
 		if (a!=0){
-			double delta = (b*b) - 4*a*c;
+			double delta = (b*b) - (4*a*c);
 			double x1 = (-(b)+Math.sqrt(delta))/2*a;
 			double x2 = (-(b)-Math.sqrt(delta))/2*a;
 			

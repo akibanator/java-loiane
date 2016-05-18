@@ -21,6 +21,7 @@ public class Ex19 {
 		System.out.println("4 - Dividir");
 		int opcao = scan.nextInt();
 		double resultado = 0;
+		boolean valida = true;
 
 		switch(opcao){
 		case 1: resultado = n1 + n2; break;
@@ -28,8 +29,10 @@ public class Ex19 {
 		case 3: resultado = n1 * n2; break; 
 		case 4: resultado = n1 / n2; break;
 		default: System.out.println("Valor inválido");
+		valida = false;
 		}
 		
+		if (valida) {
 		System.out.println("O resultado da operação é: " + resultado);
 		
 		double par = resultado % 2;
@@ -43,6 +46,7 @@ public class Ex19 {
 			System.out.println("O resultado é positivo");
 		} else {
 			System.out.println("O resultado é negativo");
+		}
 		}
 	}
 

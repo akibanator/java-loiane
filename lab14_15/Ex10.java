@@ -11,11 +11,11 @@ public class Ex10 {
 		System.out.println("Em qual turno você estuda? M - Matutino | V - Vespertino | N - Noturno");
 		String turno = scan.nextLine();
 		
-		if (turno.equals("M")){
+		if (turno.equalsIgnoreCase("M")){
 			System.out.print("Bom dia!");
-		} else if (turno.equals("V")){
+		} else if (turno.equalsIgnoreCase("V")){
 			System.out.println("Boa tarde!");
-		} else if (turno.equals("N")){
+		} else if (turno.equalsIgnoreCase("N")){
 			System.out.print("Boa noite!");
 		} else {
 			System.out.println("Valor inválido");

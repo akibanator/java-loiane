@@ -19,13 +19,9 @@ public class Ex15 {
 			System.out.println("É um triângulo");
 			if ((lado1==lado2) && (lado1==lado3)) {
 				System.out.println("O triângulo é equilátero");
-			} else if ((lado1==lado2) && (lado1!=lado3)){
+			} else if ((lado1==lado2) || (lado1==lado3) || (lado2==lado3)){
 				System.out.println("O triângulo é isósceles");
-			} else if ((lado1==lado3) && (lado1!=lado2)){
-				System.out.println("O triângulo é isósceles");
-			} else if ((lado2==lado3) && (lado2!=lado1)){
-				System.out.println("O triângulo é isósceles");
-			} else if ((lado1!=lado2) && (lado1!=lado3)){
+			} else if ((lado1!=lado2) && (lado1!=lado3) && (lado2!=lado3)){
 				System.out.println("O triângulo é escanelo");
 			}
 		} else {

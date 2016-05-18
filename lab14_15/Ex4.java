@@ -10,13 +10,22 @@ public class Ex4 {
 		System.out.println("Digite uma letra: ");
 		String letra = scan.nextLine();
 		
+		if (letra.length() > 1){
+			System.out.println("Digite só uma letra");
+		} else {
 		switch(letra){
 		case "a":
 		case "e":
 		case "i":
 		case "o":
-		case "u": System.out.println("A letra é vogal"); break;
+		case "u":
+		case "A":
+		case "E":
+		case "I":
+		case "O":
+		case "U": System.out.println("A letra é vogal"); break;
 		default: System.out.println("A letra é consoante"); break;
+		}
 		}
 	}
 

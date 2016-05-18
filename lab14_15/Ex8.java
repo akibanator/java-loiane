@@ -15,11 +15,11 @@ public class Ex8 {
 		System.out.println("Digite o preço do terceiro produto");
 		double produto3 = scan.nextDouble();
 		
-		if ((produto1<produto2) && (produto1<produto3)){
+		if ((produto1<=produto2) && (produto1<=produto3)){
 			System.out.println("Você deve comprar o produto que custa " + produto1 + "R$");
-		} else if ((produto2<produto1) && (produto2<produto3)){
+		} else if ((produto2<=produto1) && (produto2<=produto3)){
 			System.out.println("Você deve comprar o produto que custa " + produto2 + "R$");
-		} else if ((produto3<produto1) && (produto3<produto2)){
+		} else if ((produto3<=produto1) && (produto3<=produto2)){
 			System.out.println("Você deve comprar o produto que custa " + produto3 + "R$");
 		}
 
